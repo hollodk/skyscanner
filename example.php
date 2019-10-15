@@ -87,33 +87,33 @@ $query = [
 
 $res = $sc->getSession($query);
 
-dump($res->Status, $res->Query);
+dump($res->json->Status, $res->json->Query);
 
-foreach ($res->Itineraries as $value) {
+foreach ($res->json->Itineraries as $value) {
     dump($value);
     break;
 }
 
-foreach ($res->Legs as $value) {
+foreach ($res->json->Legs as $value) {
     dump($value);break;
 }
 
-foreach ($res->Segments as $value) {
+foreach ($res->json->Segments as $value) {
     dump($value);break;
 }
 
-foreach ($res->Carriers as $value) {
+foreach ($res->json->Carriers as $value) {
     dump($value);break;
 }
 
-foreach ($res->Agents as $value) {
+foreach ($res->json->Agents as $value) {
     dump($value);break;
 }
 
-foreach ($res->Places as $value) {
+foreach ($res->json->Places as $value) {
     dump($value);break;
 }
 
-foreach ($res->Currencies as $value) {
+foreach ($res->json->Currencies as $value) {
     dump($value);break;
 }
